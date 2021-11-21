@@ -31,7 +31,7 @@ function createPokemon(pokemon){
     card.appendChild(spriteContainer);
     card.appendChild(number);
     card.appendChild(name);
-  console.log(name)
+  
     pokemonContainer.appendChild(card);
     
 }

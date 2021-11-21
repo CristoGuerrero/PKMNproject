@@ -1,17 +1,17 @@
-const pokemonContainer = document.getElementById('.pokemonContainer')
+const pokemonContainer = document.getElementById('pokemonContainer')
 
-function fetchPokemon(id) {
+function fetchPokemon() {
+    let id = document.getElementById("searchid").value;
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
     .then((res) => res.json())
     .then((data) => {createPokemon(data)
     })
 }
-fetchPokemon(2);
 
 function createPokemon(pokemon){
     const card = document.createElement('div')
-    card.classList.add('pokemon-block');
-
+    card.classList.add('pokemonBlock');
+   
     const spriteContainer = document.createElement('div');
     spriteContainer.classList.add('img-container');
 
@@ -25,12 +25,13 @@ function createPokemon(pokemon){
 
     const name = document.createElement('p');
     name.classList.add('name');
-    name.textContent = pokemon.name
+    name.textContent = pokemon.name;
+   
 
     card.appendChild(spriteContainer);
     card.appendChild(number);
     card.appendChild(name);
-
+  console.log(name)
     pokemonContainer.appendChild(card);
+    
 }
-fetchPokemon(2);

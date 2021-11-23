@@ -15,22 +15,25 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class= "dex">
+   
         <h1>Pokedex</h1>
-        <ol id="pokedex"></ol>
-        
-    <center>
-        <div>
-            <input id= "searchid" name="Busca tu Pokémon" type="text" value="">
+           <br> 
+            <div>
+                <input id= "searchid" name="Busca tu Pokémon" type="text" value="">      
+                <br><br>
+                <input id= "searchpok" type="submit" value="Buscar" onclick= "fetchPokemon()">
+            </div>
+           <br>
+    
+        <div id="pokemonContainer" class="pokemon-container"></div> 
+
+        <div class= botones>
+            <button type="button" class="btn btn-primary"></button>
+            <button type="button" class="btn btn-danger"></button>
+            <button type="button" class="btn btn-success"></button>
         </div>
-        <div>
-            <input id= "searchpok" type="submit" value="Buscar" onclick= "fetchPokemon()">
-        </div>
-        <div id="pokemonContainer"       class="pokemon-container">
-        </div> 
-    </center>
-            
-        
+    </div>  
   
     <script src="./POKEDEX.js"></script>
 </body>

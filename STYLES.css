@@ -13,29 +13,43 @@ h1 {
 .dex{
 text-align: center;
 background-color: black;
-height: 500px;
+height: 530px;
 width: 300px;
 border-radius: 20px;
 margin-top: 10px;
 margin-left: 500px;
 border-style: groove;
-border-width:10px
+border-width:15px
 
 
 }
-.pokemon-container {
+.tarjeta{
   float: center;
-  background-color: rgb(184, 12, 12);
+  background: linear-gradient(rgb(87, 87, 87),rgb(29, 29, 29));
+  height:200px;
   width: 200px;
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 45px;
+  margin-left: 37px;
   margin-right:50px;
   border-style: groove;
-  border-width:5px;
+  border-width:10px;
+}
+.pokemon-container {
+  float: center;
+ 
 }
 .botones{
 float: left;}
-
+.imgball{
+  float: right;
+  right: inherit;
+}
+.ball{
+  float: right;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
   
+}
